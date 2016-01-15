@@ -1,0 +1,27 @@
+{
+    "name": "tanateros/parser",
+    "description": "Parsing site on interested components",
+    "keywords": ["parser", "grabber"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Malinovsky",
+            "email": "tanateros_pzas@bigmir.net"
+        }
+    ],
+    "require": {
+        "react/react": "^0.4.2",
+        "symfony/dom-crawler": "^3.0",
+        "symfony/css-selector": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TanaterosProject\\": "parser/src/TanaterosProject/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
