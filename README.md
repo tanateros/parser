@@ -1,7 +1,7 @@
 <h1>Parser</h1>
 
 <h3>Installation</h3>
-<code>composer require tanateros/emailparser "dev-master"</code>
+<code>composer require tanateros/parser "dev-master"</code>
 
 <h3>Example</h3>
 
