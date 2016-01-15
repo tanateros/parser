@@ -16,6 +16,11 @@ $config = [
 ];
 $site = 'http://example.com';
 
-$parser = new Parser\Email($config, $site);
-$parser->parseSiteMail();
+// parse images
+$emails = new TanaterosProject\Parser\Image($config, $site);
+echo $emails->parse('img');
+
+// parse e-mails
+$emails = new TanaterosProject\Parser\Email($config, $site);
+echo $emails->parse('mail');
 ```
