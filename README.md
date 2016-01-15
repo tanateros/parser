@@ -17,8 +17,8 @@ $config = [
 $site = 'http://example.com';
 
 // parse images
-$emails = new TanaterosProject\Parser\Image($config, $site);
-echo $emails->parse('img');
+$images = new TanaterosProject\Parser\Image($config, $site);
+echo $images->parse('img');
 
 // parse e-mails
 $emails = new TanaterosProject\Parser\Email($config, $site);
