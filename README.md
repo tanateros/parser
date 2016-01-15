@@ -1,7 +1,7 @@
-<h1>Email parser</h1>
+<h1>Parser</h1>
 
 <h3>Installation</h3>
-<code>composer require tanateros/parser "dev-master"</code>
+<code>composer require tanateros/emailparser "dev-master"</code>
 
 <h3>Example</h3>
 
@@ -15,11 +15,7 @@ $config = [
     'dataFormat' => 'txt',
 ];
 $site = 'http://example.com';
-$path = 'img';
 
-$images = new TanaterosProject\Parser\Image($config, $site);
-echo $images->parse($path);
-
-$emails = new TanaterosProject\Parser\Email($config, $site);
-echo $emails->parse($path);
+$parser = new Parser\Email($config, $site);
+$parser->parseSiteMail();
 ```
