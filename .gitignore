@@ -1,1 +1,1 @@
-cache/
+cache/ .idea/ vendor/ index.php
